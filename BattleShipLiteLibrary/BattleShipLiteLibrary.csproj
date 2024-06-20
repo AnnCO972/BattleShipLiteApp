@@ -43,6 +43,7 @@
   <ItemGroup>
     <Compile Include="GameLogic.cs" />
     <Compile Include="Models\Enum.cs" />
+    <Compile Include="Models\FleetModel.cs" />
     <Compile Include="Models\GridSpotModel.cs" />
     <Compile Include="Models\PlayerInfoModel.cs" />
     <Compile Include="Models\ShipModel.cs" />

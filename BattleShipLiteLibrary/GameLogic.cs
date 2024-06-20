@@ -75,7 +75,7 @@ namespace BattleShipLiteLibrary
                 {
                     List<string> rows = new List<string>();
                     rows.Add(row);
-                    for (int j = 1; j< model.Fleet[i].Size; j++)
+                    for (int j = 1; j< model.Fleet.Ships[i].Size; j++)
                     {
                         char newRow = (char)((int)char.Parse(row) + j);
 
@@ -87,7 +87,7 @@ namespace BattleShipLiteLibrary
 
                         foreach (string Row in rows)
                         {
-                        model.Fleet[i].Location.Add(new GridSpotModel
+                        model.Fleet.Ships[i].Location.Add(new GridSpotModel
                             {
                                 SpotLetter = Row,
                                 SpotNumber = column,
@@ -101,7 +101,7 @@ namespace BattleShipLiteLibrary
                     
                     List<int> columns = new List<int>();
                     columns.Add(column);
-                    for( int j = 1; j< model.Fleet[i].Size;j++)
+                    for( int j = 1; j< model.Fleet.Ships[i].Size;j++)
                     {
                         isSpotOpen = ValidateShipLocation(model, row, column + j);
                         if (isSpotOpen) { columns.Add(column+j); }
@@ -110,7 +110,7 @@ namespace BattleShipLiteLibrary
 
                     foreach (int Column in columns)
                     {
-                        model.Fleet[i].Location.Add(new GridSpotModel
+                        model.Fleet.Ships[i].Location.Add(new GridSpotModel
                         {
                             SpotLetter = row,
                             SpotNumber = Column,
@@ -127,7 +127,7 @@ namespace BattleShipLiteLibrary
         private static bool ValidateShipLocation(PlayerInfoModel model, string row, int column)
         {
             bool isValidLocation = true;
-            foreach(var ship in model.Fleet)
+            foreach(var ship in model.Fleet.Ships)
             {
                 foreach(var location in ship.Location)
                 {
@@ -159,7 +159,7 @@ namespace BattleShipLiteLibrary
         public static bool PlayerStillActive(PlayerInfoModel player)
         {
             bool isActive = false;
-            foreach (var ship in player.Fleet)
+            foreach (var ship in player.Fleet.Ships)
             {
                 if(ship.Status != ShipStatus.Sunk)
                 {
@@ -222,7 +222,7 @@ namespace BattleShipLiteLibrary
             bool isAHit = false;
             bool shipSunked = false;
 
-            foreach (var ship in opponent.Fleet)
+            foreach (var ship in opponent.Fleet.Ships)
             {
                 foreach (var location in ship.Location)
                 {

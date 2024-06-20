@@ -8,8 +8,8 @@ namespace BattleShipLiteLibrary.Models
 {
     public class PlayerInfoModel
     {
-        public string UsersName { get; set; }
+        public string UserName { get; set; }
         public List<GridSpotModel> ShotGrid { get; set; } = new List<GridSpotModel>();
-        public List<ShipModel> Fleet {  get; set; } = new List<ShipModel>();
+        public FleetModel Fleet { get; set; }
     }
 }
