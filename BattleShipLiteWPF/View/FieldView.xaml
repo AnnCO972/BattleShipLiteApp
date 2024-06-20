@@ -1,0 +1,192 @@
+﻿<UserControl x:Class="BattleShipLiteWPF.View.FieldView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BattleShipLiteWPF.View"
+             mc:Ignorable="d" Background="#181F1C"
+             d:DesignHeight="385" Width="355" >
+    <Grid x:Name="fieldGrid" ShowGridLines="True" Width="300" Height="350" HorizontalAlignment="Center" VerticalAlignment="Top"
+           Margin="0 10 0 0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+
+        <!--Row A-->
+
+        <Grid x:Name="CellA1" Grid.Row="0" Grid.Column="0 " MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellA2" Grid.Row="0" Grid.Column="1"  MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellA3" Grid.Row="0" Grid.Column="2" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellA4" Grid.Row="0" Grid.Column="3" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellA5" Grid.Row="0" Grid.Column="4" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellA6" Grid.Row="0" Grid.Column="5" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellA7" Grid.Row="0" Grid.Column="6" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellA8" Grid.Row="0" Grid.Column="7" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellA9" Grid.Row="0" Grid.Column="8" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellA10" Grid.Row="0" Grid.Column="9" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+
+        <!--Row B-->
+
+        <Grid x:Name="CellB1" Grid.Row="1" Grid.Column="0" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellB2" Grid.Row="1" Grid.Column="1" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellB3" Grid.Row="1" Grid.Column="2" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellB4" Grid.Row="1" Grid.Column="3" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellB5" Grid.Row="1" Grid.Column="4" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellB6" Grid.Row="1" Grid.Column="5" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellB7" Grid.Row="1" Grid.Column="6" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellB8" Grid.Row="1" Grid.Column="7" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellB9" Grid.Row="1" Grid.Column="8" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellB10" Grid.Row="1" Grid.Column="9" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+
+        <!--Row C-->
+
+        <Grid x:Name="CellC1" Grid.Row="2" Grid.Column="0" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellC2" Grid.Row="2" Grid.Column="1" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellC3" Grid.Row="2" Grid.Column="2" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellC4" Grid.Row="2" Grid.Column="3" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellC5" Grid.Row="2" Grid.Column="4" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellC6" Grid.Row="2" Grid.Column="5" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellC7" Grid.Row="2" Grid.Column="6" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellC8" Grid.Row="2" Grid.Column="7" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellC9" Grid.Row="2" Grid.Column="8" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellC10" Grid.Row="2" Grid.Column="9" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+
+        <!--Row D-->
+
+        <Grid x:Name="CellD1" Grid.Row="3" Grid.Column="0" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellD2" Grid.Row="3" Grid.Column="1" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellD3" Grid.Row="3" Grid.Column="2" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellD4" Grid.Row="3" Grid.Column="3" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellD5" Grid.Row="3" Grid.Column="4" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellD6" Grid.Row="3" Grid.Column="5" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellD7" Grid.Row="3" Grid.Column="6" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellD8" Grid.Row="3" Grid.Column="7" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellD9" Grid.Row="3" Grid.Column="8" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellD10" Grid.Row="3" Grid.Column="9" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+
+        <!--Row E-->
+
+        <Grid x:Name="CellE1" Grid.Row="4" Grid.Column="0" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellE2" Grid.Row="4" Grid.Column="1" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellE3" Grid.Row="4" Grid.Column="2" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellE4" Grid.Row="4" Grid.Column="3" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellE5" Grid.Row="4" Grid.Column="4" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellE6" Grid.Row="4" Grid.Column="5" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellE7" Grid.Row="4" Grid.Column="6" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellE8" Grid.Row="4" Grid.Column="7" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellE9" Grid.Row="4" Grid.Column="8" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellE10" Grid.Row="4" Grid.Column="9" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+
+        <!--Row F-->
+
+        <Grid x:Name="CellF1" Grid.Row="5" Grid.Column="0" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+        <Grid x:Name="CellF2" Grid.Row="5" Grid.Column="1" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+        <Grid x:Name="CellF3" Grid.Row="5" Grid.Column="2" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+        <Grid x:Name="CellF4" Grid.Row="5" Grid.Column="3" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+        <Grid x:Name="CellF5" Grid.Row="5" Grid.Column="4" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+        <Grid x:Name="CellF6" Grid.Row="5" Grid.Column="5" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+        <Grid x:Name="CellF7" Grid.Row="5" Grid.Column="6" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+        <Grid x:Name="CellF8" Grid.Row="5" Grid.Column="7" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+        <Grid x:Name="CellF9" Grid.Row="5" Grid.Column="8" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+        <Grid x:Name="CellF10" Grid.Row="5" Grid.Column="9" MouseDown="Cell_MouseDown" Grid.RowSpan="2" Background="#FFFFFF"/>
+
+        <!--Row G-->
+
+        <Grid x:Name="CellG1" Grid.Row="6" Grid.Column="0" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellG2" Grid.Row="6" Grid.Column="1" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellG3" Grid.Row="6" Grid.Column="2" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellG4" Grid.Row="6" Grid.Column="3" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellG5" Grid.Row="6" Grid.Column="4" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellG6" Grid.Row="6" Grid.Column="5" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellG7" Grid.Row="6" Grid.Column="6" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellG8" Grid.Row="6" Grid.Column="7" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellG9" Grid.Row="6" Grid.Column="8" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellG10" Grid.Row="6" Grid.Column="9" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+
+        <!--Row H-->
+
+        <Grid x:Name="CellH1" Grid.Row="7" Grid.Column="0" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellH2" Grid.Row="7" Grid.Column="1" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellH3" Grid.Row="7" Grid.Column="2" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellH4" Grid.Row="7" Grid.Column="3" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellH5" Grid.Row="7" Grid.Column="4" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellH6" Grid.Row="7" Grid.Column="5" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellH7" Grid.Row="7" Grid.Column="6" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellH8" Grid.Row="7" Grid.Column="7" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellH9" Grid.Row="7" Grid.Column="8" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellH10" Grid.Row="7" Grid.Column="9" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+
+        <!--Row I-->
+
+        <Grid x:Name="CellI1" Grid.Row="8" Grid.Column="0" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellI2" Grid.Row="8" Grid.Column="1" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellI3" Grid.Row="8" Grid.Column="2" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellI4" Grid.Row="8" Grid.Column="3" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellI5" Grid.Row="8" Grid.Column="4" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellI6" Grid.Row="8" Grid.Column="5" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellI7" Grid.Row="8" Grid.Column="6" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellI8" Grid.Row="8" Grid.Column="7" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellI9" Grid.Row="8" Grid.Column="8" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellI10" Grid.Row="8" Grid.Column="9" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+
+        <!--Row J-->
+
+        <Grid x:Name="CellJ1" Grid.Row="9" Grid.Column="0" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellJ2" Grid.Row="9" Grid.Column="1" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellJ3" Grid.Row="9" Grid.Column="2" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellJ4" Grid.Row="9" Grid.Column="3" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellJ5" Grid.Row="9" Grid.Column="4" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellJ6" Grid.Row="9" Grid.Column="5" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellJ7" Grid.Row="9" Grid.Column="6" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellJ8" Grid.Row="9" Grid.Column="7" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellJ9" Grid.Row="9" Grid.Column="8" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+        <Grid x:Name="CellJ10" Grid.Row="19" Grid.Column="9" MouseDown="Cell_MouseDown" Background="#FFFFFF"/>
+
+        <!-- Row Label-->
+        <Label Grid.Row="0" Content="A" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25,0,0,0" Foreground="#9EA93F" Width="25"/>
+        <Label Grid.Row="1" Content="B" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25,0,0,0" Foreground="#9EA93F" Width="25"/>
+        <Label Grid.Row="2" Content="C" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25,0,0,0" Foreground="#9EA93F" Width="25"/>
+        <Label Grid.Row="3" Content="D" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25,0,0,0" Foreground="#9EA93F" Width="25"/>
+        <Label Grid.Row="4" Content="E" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25,0,0,0" Foreground="#9EA93F" Width="25"/>
+        <Label Grid.Row="5" Content="F" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25 0 0 0" Foreground="#9EA93F" Width="25"/>
+        <Label Grid.Row="6" Content="G" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25,0,0,0" Foreground="#9EA93F" Width="25"/>
+        <Label Grid.Row="7" Content="H" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25,0,0,0" Foreground="#9EA93F" Width="25"/>
+        <Label Grid.Row="8" Content="I" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25,0,0,0" Foreground="#9EA93F" Width="25"/>
+        <Label Grid.Row="9" Content="J" VerticalAlignment="Top" HorizontalAlignment="Left" FontSize="18" Margin="-25,0,0,0" Foreground="#9EA93F" Width="25"/>
+
+
+        <!-- Column label-->
+        <Label Content="1" Grid.Row="9" Grid.Column="0" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F" Height="29"/>
+        <Label Content="2" Grid.Row="9" Grid.Column="1" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F" Height="29"/>
+        <Label Content="3" Grid.Row="9" Grid.Column="2" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F" Height="29"/>
+        <Label Content="4" Grid.Row="9" Grid.Column="3" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F" Height="29"/>
+        <Label Content="5" Grid.Row="9" Grid.Column="4" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F" Height="29"/>
+        <Label Content="6" Grid.Row="9" Grid.Column="5" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F" Height="29"/>
+        <Label Content="7" Grid.Row="9" Grid.Column="6" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F" Height="29"/>
+        <Label Content="8" Grid.Row="9" Grid.Column="7" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F" Height="29"/>
+        <Label Content="9" Grid.Row="9" Grid.Column="8" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F" Height="29"/>
+        <Label Content="10" Grid.Row="9" Grid.Column="9" VerticalAlignment="Top" FontSize="18" Margin="0,30,0,-40" HorizontalAlignment="Center" Foreground="#9EA93F"/>
+    </Grid>
+</UserControl>

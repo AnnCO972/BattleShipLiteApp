@@ -52,8 +52,8 @@ namespace BattleShipLite
 
         private static void IdentifyWinner(PlayerInfoModel winner)
         {
-            Console.WriteLine($"congratulations to {winner.UsersName} for winning!");
-            Console.WriteLine($"{winner.UsersName} took {GameLogic.GetShotCount(winner) } shots");
+            Console.WriteLine($"congratulations to {winner.UserName} for winning!");
+            Console.WriteLine($"{winner.UserName} took {GameLogic.GetShotCount(winner) } shots");
         }
 
         private static void RecordPlayerShot(PlayerInfoModel activePlayer, PlayerInfoModel opponent)
@@ -109,7 +109,7 @@ namespace BattleShipLite
 
         private static string AskForShot(PlayerInfoModel player)
         {
-            Console.Write($"{player.UsersName }, please enter your shot selection: ");
+            Console.Write($"{player.UserName }, please enter your shot selection: ");
             string output = Console.ReadLine();
             
             return output;
@@ -162,11 +162,10 @@ namespace BattleShipLite
             PlayerInfoModel output = new PlayerInfoModel();
             Console.WriteLine($"Player information for {playerTitle}");
             //Ask user for name
-            output.UsersName = AskForUsersName();
+            output.UserName = AskForUsersName();
 
             //Load up the shot grid
             GameLogic.InitializeGrid(output);
-
             //Ask the user for their 5 ship placements
             List<ShipModel> Fleet = new List<ShipModel>();
             Fleet.Add(new ShipModel
@@ -194,7 +193,7 @@ namespace BattleShipLite
                 ShipName = "Aircraft",
                 Size = 5
             });
-            output.Fleet = Fleet;
+            output.Fleet.Ships = Fleet;
             PlaceShips(output);
 
             //Clear 
@@ -217,7 +216,7 @@ namespace BattleShipLite
             do
             {
                 bool orientation = false;
-                Console.Write($"Where do you want to place the ship {model.Fleet[i].ShipName} of size {model.Fleet[i].Size}: ");
+                Console.Write($"Where do you want to place the ship {model.Fleet.Ships[i].ShipName} of size {model.Fleet.Ships[i].Size}: ");
                 string location = Console.ReadLine();
                 Console.Write("Want to place is horizontaly ? (Y/N)");
                 string answer = Console.ReadLine();

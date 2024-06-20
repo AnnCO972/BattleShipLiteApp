@@ -1,0 +1,9 @@
+﻿<Application x:Class="BattleShipLiteWPF.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:BattleShipLiteWPF"
+             StartupUri="View/BattleShipView.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

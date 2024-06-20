@@ -1,0 +1,74 @@
+﻿<UserControl x:Class="BattleShipLiteWPF.View.PlaceShipsView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BattleShipLiteWPF.View"
+             mc:Ignorable="d" d:Background="white"
+             Height="600" Width="500">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="355"/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="385"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Text="Place your ships" HorizontalAlignment="Center"
+                   FontSize="30" FontFamily="Bahnschrift SemiBold SemiCondensed" Margin="0 0" Foreground="#181F1C"/>
+
+        <local:FieldView x:Name="fieldView" Grid.Row="1" Grid.ColumnSpan="2" />
+
+        <StackPanel Orientation="Vertical" Grid.Column="0" Grid.Row="2" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal" Margin="5">
+                <StackPanel Orientation="Vertical" Margin="10" Width="95">
+                    <Label Content="Destroyer" FontSize="18" Foreground="#181F1C"/>
+                    <Canvas>
+                        <Ellipse x:Name="destroyer" Canvas.Left="10" Canvas.Top="10" Height="20" Width="60"
+                          Stroke="#181F1C" Fill="#9EA93F" MouseLeftButtonDown="ship_MouseLeftButtonDown"/>
+                    </Canvas>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="10" Width="95">
+                    <Label Content="Submarine" FontSize="18" Foreground="#181F1C" />
+                    <Canvas>
+                        <Ellipse x:Name="submarine" Canvas.Left="10" Canvas.Top="10" Height="20" Width="90" Stroke="#181F1C" 
+                          MouseLeftButtonDown="ship_MouseLeftButtonDown" Fill="#9EA93F"/>
+                    </Canvas>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="10" Width="95">
+                    <Label Content="Cruiser" FontSize="18" Foreground="#181F1C"/>
+                    <Canvas>
+                        <Ellipse x:Name="cruiser" Canvas.Left="10" Canvas.Top="10" Height="20" Width="90" 
+                          MouseLeftButtonDown="ship_MouseLeftButtonDown" Stroke="#181F1C" Fill="#9EA93F"/>
+                    </Canvas>
+                </StackPanel>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin=" 5">
+                <StackPanel Orientation="Vertical" Margin="10" Width="95">
+                    <Label Content="Battleship" FontSize="18" Foreground="#181F1C"/>
+                    <Canvas>
+                        <Ellipse x:Name="battleShip" Canvas.Left="10" Canvas.Top="10" Height="20" Width="130" 
+                          MouseLeftButtonDown="ship_MouseLeftButtonDown" Stroke="#181F1C" Fill="#9EA93F"/>
+                    </Canvas>
+                </StackPanel>
+                <StackPanel Orientation="Vertical" Margin="40 10 10 10" Width="95">
+                    <Label Content="Aircraft" FontSize="18" Foreground="#181F1C" HorizontalAlignment="Right"/>
+                    <Canvas>
+                        <Ellipse x:Name="aircraft" Canvas.Left="10" Canvas.Top="10" Height="20" Width="160" 
+                          MouseLeftButtonDown="ship_MouseLeftButtonDown" Stroke="#181F1C" Fill="#9EA93F"/>
+                    </Canvas>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Row="2" Grid.Column="1" VerticalAlignment="Center" Margin="0 0 5 15">
+            <RadioButton x:Name="horizontal" Content="Horizontal" FontSize="20" Margin="5"/>
+            <RadioButton x:Name="vertical" Content="Vertical" FontSize="20" Margin="5"/>
+        </StackPanel>
+       
+
+    </Grid>
+</UserControl>
