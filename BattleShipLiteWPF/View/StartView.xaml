@@ -1,0 +1,21 @@
+﻿<UserControl x:Class="BattleShipLiteWPF.View.StartView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:BattleShipLiteWPF.View"
+             mc:Ignorable="d" FontFamily="Bahnschrift Light Condensed"
+            >
+    <Grid>
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center"  HorizontalAlignment="Center" Margin="0 10 0 10" >
+            <TextBlock Grid.Row="0" HorizontalAlignment="Center" Foreground="#181F1C"
+   Text="Welcome" FontSize="40" FontFamily="Bahnschrift SemiBold SemiCondensed"  />
+            <Button HorizontalAlignment="Center" Name="start" Foreground="#181F1C"
+    Content="Start" Background="#315C2B" Width="140" FontSize="30" Padding="5" Margin="5"  
+            Visibility="{Binding Path=isStartVisible}"/>
+            <Button HorizontalAlignment="Center" Name="restart" Foreground="#181F1C"
+    Content="Restart" Background="#315C2B" Width="140" FontSize="30" Padding="5" Margin="5" 
+            Visibility="{Binding Path=isRestartVisible, FallbackValue=collapsed}"/>
+        </StackPanel>
+    </Grid>
+</UserControl>

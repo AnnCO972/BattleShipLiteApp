@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BattleShipLiteWPF.View"
-             mc:Ignorable="d" d:Background="white"
-             Height="600" Width="500">
+             mc:Ignorable="d" d:Background="white" FontFamily="Bahnschrift Light Condensed">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="355"/>

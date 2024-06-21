@@ -4,8 +4,8 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BattleShipLiteWPF.View"
-             mc:Ignorable="d" 
-             d:DesignHeight="550" d:DesignWidth="900">
+             mc:Ignorable="d" FontFamily="Bahnschrift Light Condensed"
+            >
     <Grid >
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="360"/>
@@ -30,9 +30,9 @@
 
         <Label Content="Opponent's field" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center"
        FontSize="24" FontWeight="Bold"/>
-        <local:FieldView x:Name="activePlayerField" Grid.Column="0" Grid.Row="2"/>
+        <local:FieldView x:Name="activePlayerField" Grid.Column="0" Grid.Row="2" Margin="5"/>
 
-        <local:FieldView x:Name="opponentPlayerField" Grid.Column="1" Grid.Row="2"/>
+        <local:FieldView x:Name="opponentPlayerField" Grid.Column="1" Grid.Row="2" Margin="5"/>
 
         <StackPanel Orientation="Horizontal" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Center">
             <TextBlock Text="Your health:" VerticalAlignment="Top"

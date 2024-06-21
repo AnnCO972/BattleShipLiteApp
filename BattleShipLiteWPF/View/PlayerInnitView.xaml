@@ -4,8 +4,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:BattleShipLiteWPF.View"
-             mc:Ignorable="d" d:Background="White"
-             d:DesignHeight="700" d:DesignWidth="600">
+             mc:Ignorable="d" d:Background="White" FontFamily="Bahnschrift Light Condensed">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -15,5 +14,10 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
+
+        <TextBlock Text="Name:" FontSize="40" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Center" Foreground="#181F1C" Margin="5"/>
+        <TextBox x:Name="activePlayerName" MinWidth="150" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Foreground="#181F1C" Height="35" Margin="5" BorderThickness="0 0 0 2" />
+
+            <Button x:Name="next" Content="Next" Grid.Column="1" Grid.Row="1" Padding="5" FontSize="35" Margin="5" Background="#315C2B" Foreground="#181F1C"/>
     </Grid>
 </UserControl>

@@ -10,16 +10,17 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
+using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace BattleShipLiteWPF.View
 {
     /// <summary>
-    /// Interaction logic for BattleShipView.xaml
+    /// Interaction logic for StartView.xaml
     /// </summary>
-    public partial class BattleShipView : Window
+    public partial class StartView : UserControl
     {
-        public BattleShipView()
+        public StartView()
         {
             InitializeComponent();
         }
